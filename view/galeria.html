@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hamburguesería Daniel</title>
+        <!-- FAVICON -->
+        <link rel="icon" type="image/x-icon" href="images../Favicon.png">
+        <link rel="stylesheet" href="../css/galería.css">
+        <link rel="stylesheet" href="../galería.js">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    </head>
+    <body>
+        <div class="content">
+            <div class="images">
+                <img class="galeria" src="../images/slider1.png">
+                <img class="galeria" src="../images/slider2.png">
+                <img class="galeria" src="../images/slider3.png">
+                <img class="galeria" src="../images/food1.png">
+                <img class="galeria" src="../images/food2.png">
+                <img class="galeria" src="../images/food3.png">
+                <img class="galeria" src="../images/food4.png">
+                <img class="galeria" src="../images/food5.png">
+                <img class="galeria" src="../images/food6.png">
+                <img class="galeria" src="../images/food7.png">
+                <img class="galeria" src="../images/food8.png">
+                <img class="galeria" src="../images/Patatas fritas corte grueso.png">
+                <img class="galeria" src="../images/Patatas fritas normales.png">
+                <img class="galeria" src="../images/Helado chips ahoy.jpg">
+                <img class="galeria" src="../images/Helado Colacao.png">
+                <img class="galeria" src="../images/Helado donettes.png">
+                <img class="galeria" src="../images/Helado galleta príncipe.png">
+                <img class="galeria" src="../images/Helado oreo.png">
+                <img class="galeria" src="../images/Batido filipinos.png">
+                <img class="galeria" src="../images/Batido oreo chocolate.png">
+                <img class="galeria" src="../images/Batido oreo.png">
+            </div>
+             
+        </div>  
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="../images/Favicon.png" alt="Logo pagina">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>INFORMACIÓN</h2>
+                    <p>Lunes a viernes: 13:00 a 22:00----                Sábado y Domingo: 12:00 a 1:00                      </p>
+                    <p>Teléfono: 976551444----                             Atención al cliente: 976634567----     Vía hispanidad 87, 50011, Zaragoza              </p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="https://www.facebook.com/McDonaldsSpain/?locale=es_ES">
+                            <div class="social">
+                                <img src="../images/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="https://twitter.com/McDonalds">
+                            <div class="social">
+                                <img src="../images/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="https://www.instagram.com/mcdonalds_es/?hl=es">
+                            <div class="social">
+                                <img src="../images/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2024 <b>Hamburguesería Daniel</b> - Todos los derechos </small>
+            </div>
+        </footer>
+        
+
+        <script>
+            let completo =false
+            completo = crear()
+            if(completo){
+                var indexValue = 1;
+                showImg(indexValue);
+
+                const izq = document.querySelector(".left");
+                const dcha = document.querySelector(".right");
+
+                izq.addEventListener("click",()=>{
+                showImg(indexValue += -1)
+                })
+
+                dcha.addEventListener("click",()=>{
+                showImg(indexValue += 1)
+                })
+
+                let array = document.querySelectorAll(".btn");
+
+                array.forEach((item, index) =>{
+                    item.addEventListener("click",(e)=>{
+                        /*console.log(e.target.id.substr(-1));*/
+                        showImg(indexValue = e.target.id.substr(-1))
+                    })
+                })
+            }
+            function showImg(foto){
+                setTimeout(showImg, 2500);
+                var i;
+                const img = document.querySelectorAll(".galeria");
+                const slider = document.querySelectorAll(".btm-slides span");
+
+                if(foto > img.length){
+                    indexValue = 1;
+                }
+                if (foto < 1){
+                    indexValue = img.length;
+                }
+
+                for (i=0; i < img.length; i++){
+                    img[i].style.display="none";
+                }
+
+                for (i=0; i < img.length; i++){
+                    img[i].style.display="rgba(255,255,255,0.1)";
+                }
+    
+                img[indexValue-1].style.display = "block";
+                slider[indexValue-1].style.background = "white";
+
+                indexValue++;
+                if(indexValue>3){indexValue=1}
+            }
+
+            function crear(){
+                const slider = document.querySelector(".content")
+                /*--------Flecha Izda-------*/
+                let div = document.createElement('div')
+                div.className = "sliders";
+                div.className += " left";
+
+                let span = document.createElement('span');
+                span.className = "fa-solid fa-angle-left"
+                div.append(span);
+                
+                slider.append(div)
+                
+                /*--------Flecha dcha-------*/
+                let div2 = document.createElement('div')
+                div2.className = "sliders";
+                div2.className += " right";
+
+                let span2 = document.createElement('span');
+                span.className = "fa-solid fa-angle-right"
+                div2.append(span2);
+                
+                slider.append(div2)
+                /*--------Botones-------*/
+
+                let div3 =document.createElement('div');
+                div3.className = "btm-slides";
+                slider.append(div3);
+
+                const imagenes = document.querySelectorAll('.galeria');
+
+                for(var i=1; i<= imagenes.length; i++){
+                    let span3 = document.createElement('span');
+                    span3.className = "btn";
+                    span3.id="btn-" + i;
+                    div3.append(span3);
+                }  
+
+                return true;
+            }
+
+        </script>
+    </body>
+
+    
+
+    
+    
+ 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesería Daniel</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/Favicon.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../css/carrito.css">
+    <link rel="stylesheet" href="../carrito.js">
+</head>
+<body>
+    <header>
+      <div class="menu">
+        <img src="../images/logo.svg" alt="">
+        <nav>
+        <ul>
+            <li><a href="../view/galeria.html">Galería</a></li>
+            <li><a href="../view/formulario.html">Formulario</a></li>
+            <li><a href="../view/contacto.html">Contacto</a></li>
+            <li><a href="../index.html">Menú</a></li>
+        </ul>
+        </nav>
+      </div>
+      <div id="principal">
+        <h1>TIENDA</h1>
+        <div id="productos">
+            <table>
+                <tr class="primera"></tr>FORMULARIO</td><td>IMAGEN</td><td>PRODUCTO</td></tr>
+                <tr><td><img src="../images/slider1.png" height="1000" width="886"></td><td id="1">Hamburguesa wagyu</td><td><input type="button" value="€50.00" onclick="comprar('Hamburguesa wagyu')"></td><td><input type="button" onclick="borrar('Hamburguesa wagyu')"></td></tr>
+                <tr><td><img src="../images/food1.png" height="350" width="242"></td><td id="1">Hamburguesa completa</td><td><input type="button" value="€4.99" onclick="comprar('Hamburguesa completa')"></td><td><input type="button" onclick="borrar('Hamburguesa completa')"></td></tr>
+                <tr><td><img src="../images/food2.png" height="350" width="242"></td><td id="2">Sándwich mixto</td><td><input type="button" value="€4.50" onclick="comprar('Sándwich mixto')"></td><td><input type="button" onclick="borrar('Sándwich mixto')"></td></tr>
+                <tr><td><img src="../images/food3.png" height="350" width="242"></td><td id="3">Bocadillo pollo</td><td><input type="button" value="€3.50" onclick="comprar('Bocadillo de pollo')"></td><td><input type="button" onclick="borrar('Bocadillo de pollo')"></td></tr>
+                <tr><td><img src="../images/food4.png" height="350" width="242"></td><td id="4">Fajita de ternera</td><td><input type="button" value="€3.50" onclick="comprar('Fajita de ternera')"></td><td><input type="button" onclick="borrar('Fajita de ternera')"></td></tr>
+                <tr><td><img src="../images/food5.png" height="350" width="242"></td><td id="5">Fajita mixta</td><td><input type="button" value="€3.50" onclick="comprar('Fajita mixta')"></td><td><input type="button" onclick="borrar('Fajita mixta')"></td></tr>
+                <tr><td><img src="../images/food6.png" height="350" width="242"></td><td id="6">Fajita vegetal</td><td><input type="button" value="€3.50" onclick="comprar('Fajita vegetal')"></td><td><input type="button" onclick="borrar('Fajita vegetal')"></td></tr>
+                <tr><td><img src="../images/food7.png" height="350" width="242"></td><td id="7">Ensalada César</td><td><input type="button" value="€4.50" onclick="comprar('Ensalada César')"></td><td><input type="button" onclick="borrar('Ensalada César')"></td></tr>
+                <tr><td><img src="../images/food8.png" height="350" width="242"></td><td id="8">Pinchos morunos</td><td><input type="button" value="€6.50" onclick="comprar('Pinchos morunos')"></td><td><input type="button" onclick="borrar('Pinchos morunos')"></td></tr>
+                <tr><td><img src="../images/food9.png" height="350" width="242"></td><td id="9">Pizza peperoni</td><td><input type="button" value="€5.50" onclick="comprar('Pizza peperoni')"></td><td><input type="button" onclick="borrar('Pizza peperoni')"></td></tr>
+                <tr><td><img src="../images/Helado chips ahoy.jpg" height="180" width="180"></td><td id="10">Helado chips ahoy</td><td><input type="button" value="€3.50" onclick="comprar('Helado chips ahoy')"></td><td><input type="button" onclick="borrar('Helado chips ahoy')"></td></tr>
+                <tr><td><img src="../images/Helado Colacao.png" height="1080" width="943"></td><td id="11">Helado colacao</td><td><input type="button" value="€3.50" onclick="comprar('Helado Colacao')"></td><td><input type="button" onclick="borrar('Helado Colacao')"></td></tr>
+                <tr><td><img src="../images/Helado donettes.png" height="1080" width="943"></td><td id="12">Helado donettes</td><td><input type="button" value="€3.50" onclick="comprar('Helado donettes')"></td><td><input type="button" onclick="borrar('Helado donettes')"></td></tr>
+                <tr><td><img src="../images/Helado galleta príncipe.png" height="500" width="540"></td><td id="13">Helado galleta príncipe</td><td><input type="button" value="€3.50" onclick="comprar('Helado de galleta príncipe')"></td><td><input type="button" onclick="borrar('Helado de galleta príncipe')"></td></tr>
+                <tr><td><img src="../images/Helado oreo.png" height="1080" width="943"></td><td id="14">Helado oreo</td><td><input type="button" value="€3.50" onclick="comprar('Helado oreo')"></td><td><input type="button" onclick="borrar('Helado oreo')"></td></tr>
+                <tr><td><img src="../images/Patatas fritas corte grueso.png" height="1080" width="943"></td><td id="15">Patatas fritas gruesas</td><td><input type="button" value="€2.00" onclick="comprar('Patatas fritas corte grueso')"></td><td><input type="button" onclick="borrar('Patatas fritas corte grueso')"></td></tr>
+                <tr><td><img src="../images/Patatas fritas normales.png" height="1080" width="943"></td><td id="16">Patatas fritas normales</td><td><input type="button" value="€2.00" onclick="comprar('Patatas fritas corte fino')"></td><td><input type="button" onclick="borrar('Patatas fritas corte fino')"></td></tr>
+                <tr><td><img src="../images/Batido filipinos.png" height="600" width="411"></td><td id="17">Batido filipinos</td><td><input type="button" value="€2.50" onclick="comprar('Batido de filipinos')"></td><td><input type="button" onclick="borrar('Batido de filipinos')"></td></tr>
+                <tr><td><img src="../images/Batido oreo chocolate.png" height="600" width="411"></td><td id="18">Batido oreo chocolate</td><td><input type="button" value="€2.50" onclick="comprar('Batido oreo de chocolate')"></td><td><input type="button" onclick="borrar('Batido oreo de chocolate')"></td></tr>
+                <tr><td><img src="../images/Batido oreo.png" height="600" width="411"></td><td id="19">Batido oreo</td><td><input type="button" value="€2.50" onclick="comprar('Batido de oreo')"></td><td><input type="button" onclick="borrar('Batido de oreo')"></td></tr>
+                <tr><td><img src="../images/Botella agua.jpg" height="400" width="400"></td><td id="20">Botella agua</td><td><input type="button" value="€1.50" onclick="comprar('Botella de agua')"></td><td><input type="button" onclick="borrar('Botella de agua')"></td></tr>
+                <tr><td><img src="../images/Cerveza.jpg" height="1006" width="706"></td><td id="21">cerveza</td><td><input type="button" value="€1.50" onclick="comprar('Cerveza')"></td><td><input type="button" onclick="borrar('Cerveza')"></td></tr>
+                <tr><td><img src="../images/Cocacola.jpg" height="513" width="655"></td><td id="22">Cocacola</td><td><input type="button" value="€1.50" onclick="comprar('Cocacola')"></td><td><input type="button" onclick="borrar('Cocacola')"></td></tr>
+                <tr><td><img src="../images/Fanta Naranja.jpg" height="800" width="800"></td><td id="23">Fanta Naranja</td><td><input type="button" value="€1.50" onclick="comprar('Fanta de naranja')"></td><td><input type="button" onclick="borrar('Fanta de Naranja')"></td></tr>
+                <ul>
+                    <li><a href="../view/formulario.html">Rellene el formulario</a></li>
+                </ul>
+            </table>
+        </div>
+        <div id="carrito">
+            <h2> No tienes nada en el carrito</h2>
+        </div>
+      </div>
+
+      
+    <footer class="pie-pagina">
+        <div class="grupo-1">
+            <div class="box">
+                <figure>
+                    <a href="#">
+                        <img src="../images/Favicon.png" alt="Logo pagina">
+                    </a>
+                </figure>
+            </div>
+            <div class="box">
+                <h2>INFORMACIÓN</h2>
+                <p>Lunes a viernes: 13:00 a 22:00----                Sábado y Domingo: 12:00 a 1:00                      </p>
+                <p>Teléfono: 976551444----                             Atención al cliente: 976634567----     Vía hispanidad 87, 50011, Zaragoza              </p>
+            </div>
+            <div class="box">
+                <h2>SIGUENOS</h2>
+                <div class="red-social">
+                    <a href="#" class="https://www.facebook.com/McDonaldsSpain/?locale=es_ES">
+                        <div class="social">
+                            <img src="../images/s1.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="https://twitter.com/McDonalds">
+                        <div class="social">
+                            <img src="../images/s2.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="#" class="https://www.instagram.com/mcdonalds_es/?hl=es">
+                        <div class="social">
+                            <img src="../images/s3.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="grupo-2">
+            <small>&copy; 2024 <b>Hamburguesería Daniel</b> - Todos los derechos </small>
+        </div>
+    </footer>
+    <script src="../carrito.js"></script>
+</body>
+</html>    
+
+

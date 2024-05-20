@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hamburguesería Daniel</title>
+        <!-- FAVICON -->
+        <link rel="icon" type="image/x-icon" href="images../Favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="../css/formulario.css">
+    </head>
+    <body>
+        <header>
+            <div class="menu">
+                <img src="../images/logo.svg" alt="">
+                <nav>
+                <ul>
+                    <li><a href="../view/galeria.html">Vista</a></li>
+                    <li><a href="../view/carrito.html">Productos</a></li>
+                    <li><a href="../view/contacto.html">Contacto</a></li>
+                    <li><a href="../index.html">Menú</a></li>
+                </ul>
+                </nav>
+              </div>
+        </header>
+    <!-- MAIN -->
+    <div class="container">
+        <form id="myForm" name="myForm" action="#" method="get" target="_self">
+            <ul class="flex-outer">
+                <li>
+                    <label for="first-name">Nombre</label>
+                    <input type="text" id="first-name" name="first-name"
+                        placeholder="Escriba su nombre" pattern="[A-Z a-z]{3, 15}"
+                        tittle="Escriba sólo letras entre 3 y 15 caracteres" required>
+                </li>
+                <li>
+                    <label for="first-name">Apellido</label>
+                    <input type="text" id="surname" name="surname"
+                        placeholder="Escriba sus apellidos" pattern="[A-Z a-z]{4, 40}"
+                        tittle="Escriba sólo letras entre 3 y 15 caracteres" required>
+                </li>
+                <li>
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" name="email"
+                        placeholder="Escriba su correo electrónico" pattern="[A-Za-z0-9_-.]+@[a-z0-9._-]+/.[a-z]{2,4}"
+                        tittle="Escriba su correo electrónico" required>
+                </li>
+                <li>
+                    <label for="telephone">Teléfono</label>
+                    <input type="tel" id="telephone" name="telephone"
+                        placeholder="Escriba su teléfono" pattern="[0-9]{9}"
+                        tittle="Escriba los 9 números de su teléfono móvil" required>
+                </li>
+                <li>
+                    <label for="telephone">Mensaje</label>
+                    <textarea rows="6" id="message" placeholder="Escriba aquí su mensaje"></textarea>
+                </li>
+                <li>
+                    <p>Edad</p>
+                    <ul class="flex-inner">
+                        <li>
+                            <label for="veinte-veintinueve">20-29</label>
+                            <input type="radio" id="veinte-veintinueve" name="age-option" value="20-29">
+                        </li>
+                        <li>
+                            <label for="treinta-treintaynueve">30-39</label>
+                            <input type="radio" id="treinta-treintaynueve" name="age-option" value="30-39">
+                        </li>
+                        <li>
+                            <label for="cuarenta-veintinueve">40-49</label>
+                            <input type="radio" id="cuarenta-cuarentaynueve" name="age-option" value="40-49">
+                        </li>
+                        <li>
+                            <label for="cincuenta-cincuentaynueve">50-59</label>
+                            <input type="radio" id="cincuenta-cincuentaynueve" name="age-option" value="50-59">
+                        </li>
+                        <li>
+                            <label for="otherAges">Otros</label>
+                            <input type="radio" id="otherAges" name="age-option" value="Otros">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p>Opciones de envío</p>
+                    <ul class="flex-inner">
+                        <li>
+                            <label for="10-15 minutos/3.99€">10-15 minutos/3,99€</label>
+                            <input type="radio" id="10-15 minutos/3.99€" name="sending-option" value="10-15 minutos/3.99€">
+                        </li>
+                        <li>
+                            <label for="25-30 minutos/2.99€">25-30 minutos/2,99€</label>
+                            <input type="radio" id="25-30 minutos/2.99€" name="sending-option" value="25-30 minutos/2.99€">
+                        </li>
+                        <li>
+                            <label for="40-45 minutos/1.99€">40-45 minutos/1,99€</label>
+                            <input type="radio" id="40-45 minutos/1.99€" name="sending-option" value="40-45 minutos/1.99€">
+                        </li>
+                        <li>
+                            <label for="45-60 minutos/0.99€">45-60 minutos/0,99€</label>
+                            <input type="radio" id="45-60 minutos/0.99€" name="sending-option" value="45-60 minutos/0.99€">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <label for="direction">Dirección de envío</label>
+                    <textarea rows="4" id="direction" placeholder="Escriba aquí su dirección" pattern="[A-Za-z0-9_-.]+@[a-z0-9._-]+/.[a-z]{2,4}"></textarea>
+                </li>
+                <li class="liButtons">
+                    <input type="reset">Borrar</button>
+                    <input type="submit">Enviar </button>
+                </li>
+            </ul>
+        </form>
+
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="../images/Favicon.png" alt="Logo pagina">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>INFORMACIÓN</h2>
+                    <p>Lunes a viernes: 13:00 a 22:00----                Sábado y Domingo: 12:00 a 1:00                      </p>
+                    <p>Teléfono: 976551444----                             Atención al cliente: 976634567----     Vía hispanidad 87, 50011, Zaragoza              </p>
+                </div>
+                <div class="box">
+                    <h2>SIGUENOS</h2>
+                    <div class="red-social">
+                        <a href="#" class="https://www.facebook.com/McDonaldsSpain/?locale=es_ES">
+                            <div class="social">
+                                <img src="../images/s1.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="https://twitter.com/McDonalds">
+                            <div class="social">
+                                <img src="../images/s2.svg" alt="">
+                            </div>
+                        </a>
+                        <a href="#" class="https://www.instagram.com/mcdonalds_es/?hl=es">
+                            <div class="social">
+                                <img src="../images/s3.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2024 <b>Hamburguesería Daniel</b> - Todos los derechos </small>
+            </div>
+        </footer>
+    </div>
+    </body>
+        
+

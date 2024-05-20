@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Hamburguesería Daniel</title>
+        <!-- FAVICON -->
+        <link rel="icon" type="image/x-icon" href="images../Favicon.png">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.2.0/dist/leaflet.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css">
+        <link rel="stylesheet" href="../css/contacto.css">
+        <style type="text/css">
+        
+            #map {
+                height: 800px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="map"></div>
+        <script src="https://unpkg.com/leaflet@1.2.0/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
+        
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="../images/Favicon.png" alt="Logo pagina">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                    <h2>INFORMACIÓN</h2>
+                    <p>Lunes a viernes: 13:00 a 22:00----                Sábado y Domingo: 12:00 a 1:00                      </p>
+                    <p>Teléfono: 976551444----                             Atención al cliente: 976634567----     Vía hispanidad 87, 50011, Zaragoza              </p>
+                </div>
+            <div class="grupo-2">
+                <small>&copy; 2024 <b>Hamburguesería Daniel</b> - Todos los derechos </small>
+            </div>
+        </footer>
+        
+        
+        
+        <script>
+
+            navigator.geolocation.getCurrentPosition(function(position){
+                var latitude = position.coords.latitude;
+                var longitude = position.coords.longitude;
+                //var map = L.map('map').setView([latitude, longitude], 15);
+                let map = L.map('map', {
+                    center: [latitude,longitude],
+                    zoom: 12
+                });
+
+                L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                    atribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+                }).addTo(map);
+
+
+                let control = L.Routing.control({
+                    waypoints: [
+                        L.latLng(latitude, longitude),
+                        L.latLng(41.6504429, -0.9220302,17)
+                    ],
+                    language: 'es',
+                    show: true
+                }).addTo(map);
+                });
+        </script>
+    </body>
+
+    
+            
+
+    <header>
+        <div class="menu">
+            <img src="../images/logo.svg" alt="">
+            <nav>
+            <ul>
+                <li><a href="../view/galeria.html">Vista</a></li>
+                <li><a href="../view/carrito.html">Productos</a></li>
+                <li><a href="../index.html">Menú</a></li>
+                <li><a href="../view/formulario.html">Formulario</a></li>
+            </ul>
+            </nav>
+          </div>
+    </header>
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</script>
+</body>
+    

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburguesería Daniel</title>
+    <!-- FAVICON -->
+    <link rel="icon" type="image/x-icon" href="images/Favicon.png">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+
+
+    <header>
+
+        <div class="menu container">
+
+                <img class="logo-1" src="images/logo.svg" alt="">
+                <input type="checkbox" id="menu"/>
+                <label for="menu">
+                    <img src="images/menu.png" class="menu icono" alt="">
+                </label>
+                <nav class="navbar">
+                    <div class="menu-1">
+                        <ul>
+                            <li><a href="./view/carrito.html">Productos</a></li>
+                            <li><a href="./view/galeria.html">Vista</a></li>
+                            <li><a href="./view/formulario.html">Formulario</a></li>
+                            <li><a href="./view/contacto.html">Contacto</a></li>
+                        </ul>
+                    </div>
+                    <img class="logo-2" src="images/logo.svg" alt="">
+                    <div class="menu-2">
+                        <ul>
+                            <li><a href="#">Síguenos</a></li>
+                        </ul>
+                        <div class="social">
+                            <a href="https://www.facebook.com/McDonaldsSpain/?locale=es_ES">
+                                <div class="social">
+                                    <img src="images/s1.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://twitter.com/McDonalds">
+                                <div class="social">
+                                    <img src="images/s2.svg" alt="">
+                                </div>
+                            </a>
+                            <a href="https://www.instagram.com/mcdonalds_es/?hl=es">
+                                <div class="social">
+                                    <img src="images/s3.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+    
+            <div class="header-content container">
+                
+                <div class="swiper myswiper-1">
+                    <div class="swiper-wrapper">
+
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <div class="slider-txt">
+                                    <h1>Club gourmet</h1>
+                                    <p>
+                                        Disfruta de la nueva hamburguesa con un increíble bacon crujiente,
+                                        y un queso cheedar que se derrite por toda la hamburguesa.
+                                        Y nuestra mejor carne exclusiva de wagyu, haciendo esta hamburguesa
+                                        una delicia para los amantes de la carne.
+                                    </p>
+                                    <div class="botones">
+                                        <a href="./view/carrito.html" class="btn-1">Hamburguesa wagyu</a>
+                                        <a href="./view/carrito.html" class="btn-1">€50</a>
+                                    </div>
+                                </div>
+                                <div class="slider-img">
+                                    <img src="images/slider1.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <div class="slider-txt">
+                                    <h1>Tortas</h1>
+                                    <p>
+                                        Para ser comida rápida no está nada mal la nueva torta con nuestro
+                                        nuevo pan de pita, acompañada de tomate, bacon, lechuga y cebolla.
+                                    </p>
+                                    <div class="botones">
+                                        <a href="#" class="btn-1">Comprar</a>
+                                        <a href="#" class="btn-1">Menú</a>
+                                    </div>
+                                </div>
+                                <div class="slider-img">
+                                    <img src="images/slider2.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="slider">
+                                <div class="slider-txt">
+                                    <h1>Hamburguesa completa</h1>
+                                    <p>
+                                        Con tomate, lechuga, pepinillo, cebolla caramelizada y huevo, es una 
+                                        explosión de sabores en tu boca. No te podrás resistir a probarla.
+                                    </p>
+                                    <div class="botones">
+                                        <a href="#" class="btn-1">Comprar</a>
+                                        <a href="#" class="btn-1">Menú</a>
+                                    </div>
+                                </div>
+                                <div class="slider-img">
+                                    <img src="images/slider3.png" alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-pagination"></div>
+                </div>
+            </div>
+    </header>
+    <main class="Productos">
+        <div class="tabs container">
+
+            <input type="radio" name="tabs" id="tab1" checked="checked" class="tabInput" value="1">
+            <label for="tab1">Hamburguesa</label>
+            <div class="tab">
+                <div class="swiper mySwiper-2" id="swiper1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="product">
+                                <div class="product-img">
+                                    <h4>Gourmet</h4>
+                                    <img src="images/food1.png" alt="">
+                                </div>
+                                <div class="product-txt">
+                                     <h4>Cheeseburguer</h4>
+                                     <a href="./view/carrito.html" class="btn-1">Comprar</a>
+                                     <span class="price">€4.50</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>                
+
+                <input type="radio" name="tabs" id="tab2" checked="checked" class="tabInput" value="2">
+                <label for="tab2">Fajita</label>
+                <div class="tab">
+                    <div class="swiper mySwiper-2" id="swiper2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <h4>Gourmet</h4>
+                                        <img src="images/food5.png" alt="">
+                                    </div>
+                                    <div class="product-txt">
+                                        <h4>Fajita mixta</h4>
+                                        <a href="./view/carrito.html" class="btn-1">Comprar</a>
+                                        <span class="price" >€6.00</span>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                     <div class="swiper-button-next"></div>
+                     <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+
+
+                <input type="radio" name="tabs" id="tab3" checked="checked" class="tabInput" value="3">
+                <label for="tab3">Ensalada</label>
+                <div class="tab">
+                    <div class="swiper mySwiper-2" id="swiper3">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product">
+                                    <div class="product-img">
+                                        <h4>Gourmet</h4>
+                                        <img src="images/food7.png" alt="">
+                                    </div>
+                                    <div class="product-txt">
+                                        <h4>Cesar</h4>
+                                        <a href="./view/carrito.html" class="btn-1">Comprar</a>
+                                        <span class="price" >€4.50</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+        <section class="info container">
+            <div class="info-img">
+                <img src="images/food1.png" alt="">
+            </div>
+            <div class="info-txt">
+                <h2>Burguers y bocadillos</h2>
+                <p>
+                   Descubre nuestras hamburguesas y bocadillos, eligiendo el que más te guste.
+                   Descubre también nuestra hamburguesa exclusiva que no podrás encontrar en ningún otro 
+                   sitio.
+                </p>
+                <a href="./view/carrito.html" class="btn-2">Ver</a>
+            </div>
+        </section>
+
+        
+        
+
+        
+
+       
+
+
+
+        <section class="info container">
+            <div class="info-img">
+                <img src="images/Patatas fritas.jpg" alt="">
+            </div>
+            <div class="info-txt">
+                <h2>Patatas Fritas</h2>
+                <p>
+                   Tienes a elegir dos tipos diferentes de patatas, las tradicionales con corte fino servidas
+                   en una tarrina o las patatas de corte grueso servidas en bolsa. 
+                </p>
+                <a href="./view/carrito.html" class="btn-2">2.00€</a>
+            </div>
+        </section>
+        
+
+        <section class="info container">
+            <div class="info-img">
+                <img src="images/Bebidas.jpg" alt="">
+            </div>
+            <div class="info-txt">
+                <h2>Bebidas</h2>
+                <p>
+                   Acompaña tu comida con una refrescante bebida.
+                </p>
+                <a href="./view/carrito.html" class="btn-2">Todas las bebidas 1.50€</a>
+            </div>
+        </section>
+
+        <section class="info container">
+            <div class="info-img">
+                <img src="images/Batidos.png" alt="">
+            </div>
+            <div class="info-txt">
+                <h2>Batidos</h2>
+                <p>
+                   Disfruta de nuestros nuevos batidos de sabor, oreo con chocolate blanco,
+                   oreo con chocolate negro y filipinos.
+                </p>
+                <a href="./view/carrito.html" class="btn-2">2.50€</a>
+            </div>
+        </section>
+        
+
+        <section class="info container">
+            <div class="info-img">
+                <img src="images/Helados.png" alt="">
+            </div>
+            <div class="info-txt">
+                <h2>Helados</h2>
+                <p>
+                   Con múltiples opciones, no podrás parar de comer nuestros helados hechos artesanalmente.
+                   Elije tu sabor favorito y pruébalo.   
+                </p>
+                <a href="./view/carrito.html" class="btn-2">Todos los helados 3.50€</a>
+            </div>
+        </section>
+    
+        <section class="info container">
+    
+            <div class="info-img">
+                <img src="images/info.png" alt="">
+            </div>
+    
+            <div class="info-txt">
+                <h2>Información</h2>
+                <p>
+                   Actualmente tenemos a vuestra disposición un único local en Zaragoza.
+                   En él se encontrarán los mismos productos de comida rápida y podrás disfrutar de un 
+                   amplio horario a lo largo de la semana para poder visitar y probar la comida. Si necesitas hacer
+                   alguna reserva, ponemos a tu disposición un número de teléfono.
+                </p>
+                <a href="./view/carrito.html" class="btn-2">Disfruta de nuestros productos</a>
+            </div>
+    
+        </section>
+    
+        <section class="horario">
+            <div class="horario-info container">
+    
+                <h2>Horario</h2>
+                <div class="horario-txt">
+                        <div class="txt">
+                            <h4>Dirección</h4>
+                            <p>
+                                Vía Hispanidad,87,50011 Zaragoza
+                            </p>
+                        </div>
+                        <div class="txt">
+                            <h4>Horario</h4>
+                            <p>
+                                Lunes a Viernes: 13:00 a 22:00
+                            </p>
+                            <p>
+                                Sábado y Domingo: 12:00 a 01:00
+                            </p>
+                        </div>
+                        <div class="txt">
+                            <h4>Teléfono</h4>
+                            <p>
+                                976551444
+                            </p>
+                        </div>
+                        <div class="txt">
+                            <h4>Redes Sociales</h4>
+                            <div class="socials">
+                                <a href="#">
+                                    <div class="social">
+                                        <img src="images/s1.svg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social">
+                                        <img src="images/s2.svg" alt="">
+                                    </div>
+                                </a>
+                                <a href="#">
+                                    <div class="social">
+                                        <img src="images/s3.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </section>
+    
+        <footer class="footer container">
+    
+            <img class="logo-2" src="images/logo.svg" alt="">
+            <div class="txt">
+                <h4>Atención al cliente</h4>
+                <p>
+                   976634567 
+                   Calle María Zambrano 54, Zaragoza, Aragón.
+                </p>
+            </div>
+            <div class="txt">
+                <h4>Aviso legal</h4>
+                <p>
+                   Todo aquel que acceda a nuestros restaurantes y página web deberá cumplir
+                   una serie de normal de comportamiento que puedan hacer que el bienestar sea 
+                   la característica principal de nuestro restaurante.
+                </p>
+            </div>
+            <div class="links">
+                <h4>Redes sociales </h4>
+                <div class="socials">
+                    <a href="https://www.facebook.com/McDonaldsSpain/?locale=es_ES">
+                        <div class="social">
+                            <img src="images/s1.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="https://twitter.com/McDonalds">
+                        <div class="social">
+                            <img src="images/s2.svg" alt="">
+                        </div>
+                    </a>
+                    <a href="https://www.instagram.com/mcdonalds_es/?hl=es">
+                        <div class="social">
+                            <img src="images/s3.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
